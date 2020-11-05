@@ -12,12 +12,12 @@ pipeline {
       stage('Build') {
          steps {
             println "Building"
-            sh "cd java/mosh/src ; javac App.java"
+            sh "cd mosh/src ; javac App.java"
          }
       }
       stage('Test') {
          steps {
-            sh "cd java/mosh/src ; java App"
+            sh "cd mosh/src ; java App"
          }
       }
    }
